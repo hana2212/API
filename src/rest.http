@@ -1,0 +1,43 @@
+GET http://localhost:3000/products
+
+### Create a product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name" :"THINKING PAD",
+    "price": 9000
+}
+
+
+### GET a product by id 
+GET http://localhost:3000/products/651be07a71f91f428fc3ca30
+  
+### PATCH a product by id 
+PATCH http://localhost:3000/products/651be07a71f91f428fc3ca30
+Content-Type: application/json
+
+{
+    "price": 1999
+}
+
+### DELETE a product by id 
+DELETE  http://localhost:3000/products/651bdfa60674914ea5beed64
+
+###
+GET http://localhost:3000/
+
+### 
+GET http://localhost:3000/test?name=iMac&price=2399
+
+### 
+GET http://localhost:3000/test/22
+
+###
+POST http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "name" : "iMac",
+    "price": 5555
+}
